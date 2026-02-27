@@ -5,73 +5,102 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quick Release Bail Bonds®™ | Contact</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Poppins font for modern commercial look -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --primary:#0B1F3B;
-  --accent:#1C3D7A;
-  --gold:#C6A85B;
-  --bg:#F3F6FA;
+  --primary: #7FFF00;   /* slime green */
+  --accent: #FF0000;    /* red */
+  --secondary: #FFFFFF; /* white */
+  --bg: #FAFAFA;        /* light background */
 }
 
 body {
   margin:0;
-  font-family:'Inter',sans-serif;
-  background:var(--bg);
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: #1b1b1b;
 }
 
+/* Header & Navigation */
 header {
-  background:var(--primary);
-  color:white;
-  padding:22px 40px;
+  background: var(--primary);
+  color: var(--secondary);
+  padding: 20px 40px;
   display:flex;
-  justify-content:space-between;
-  align-items:center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
-  font-family:'Playfair Display',serif;
-  font-size:22px;
-  margin:0;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
 }
 
 nav a {
-  color:white;
-  margin-left:25px;
-  text-decoration:none;
+  color: var(--secondary);
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
 nav a:hover {
-  color:var(--gold);
+  color: var(--accent);
 }
 
+nav a.active {
+  color: var(--accent);
+}
+
+/* Contact Section */
 .section {
-  max-width:900px;
-  margin:auto;
-  padding:80px 20px;
-  text-align:center;
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 20px;
+  text-align: center;
 }
 
 .section h2 {
-  color:var(--primary);
-  font-size:32px;
+  color: var(--primary);
+  font-size: 32px;
+  margin-bottom: 40px;
 }
 
 .contact-box {
-  background:white;
-  padding:35px;
-  border-radius:8px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.05);
-  margin-top:30px;
+  background: var(--secondary);
+  padding: 35px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  margin-top: 30px;
+  text-align: left;
 }
 
-footer {
-  background:var(--primary);
-  color:white;
-  text-align:center;
-  padding:40px 20px;
+.contact-box p {
+  margin: 15px 0;
 }
+
+.contact-box a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-box a:hover {
+  color: var(--accent);
+}
+
+/* Footer */
+footer {
+  background: var(--primary);
+  color: var(--secondary);
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
 </style>
 </head>
 
@@ -80,11 +109,12 @@ footer {
 <header>
 <h1>Quick Release Bail Bonds®™</h1>
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-<a href="legal.html">Legal</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html" class="active">Contact</a>
+  <a href="staff.html">Staff</a>
+  <a href="legal.html">Legal</a>
 </nav>
 </header>
 
@@ -92,18 +122,21 @@ footer {
 <h2>Contact Us 24/7</h2>
 
 <div class="contact-box">
-<p><strong>Office Location:</strong><br>
-108 E Central Ave<br>
-Belton, TX 76513</p>
+  <p><strong>Office Location:</strong><br>
+  108 E Central Ave<br>
+  Belton, TX 76513</p>
 
-<p><strong>Email:</strong><br>
-QuickReleaseBelton@consultant.com</p>
+  <p><strong>Phone:</strong><br>
+  <a href="tel:+12545955493">(254) 595-5493</a></p>
 
-<p><strong>Service Hours:</strong><br>
-Available 24 Hours / 7 Days</p>
+  <p><strong>Email:</strong><br>
+  <a href="mailto:QuickReleaseBelton@consultant.com">QuickReleaseBelton@consultant.com</a></p>
 
-<p><strong>Response Time:</strong><br>
-Immediate Release Coordination</p>
+  <p><strong>Service Hours:</strong><br>
+  Available 24 Hours / 7 Days</p>
+
+  <p><strong>Response Time:</strong><br>
+  Immediate Release Coordination</p>
 </div>
 
 </section>
