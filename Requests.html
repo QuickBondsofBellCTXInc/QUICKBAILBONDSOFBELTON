@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Request Contact | Quick Release Bail Bonds®™</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  font-family:Arial, sans-serif;
+  margin:0;
+  background:#F3F6FA;
+  color:#1b1b1b;
+}
+header, footer{
+  background:#0B1F3B;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+.section{
+  max-width:800px;
+  margin:auto;
+  padding:50px 20px;
+}
+form{
+  background:white;
+  padding:30px;
+  border-radius:8px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  margin-bottom:40px;
+}
+form h2{
+  color:#0e1c36;
+  margin-bottom:20px;
+}
+label{
+  display:block;
+  margin-top:15px;
+  font-weight:600;
+}
+input, select, textarea{
+  width:100%;
+  padding:10px;
+  margin-top:5px;
+  border:1px solid #ccc;
+  border-radius:4px;
+  font-size:14px;
+}
+textarea{
+  resize:vertical;
+  min-height:100px;
+}
+button{
+  margin-top:25px;
+  background:#2FA84F;
+  color:white;
+  border:none;
+  padding:14px 25px;
+  font-size:15px;
+  border-radius:5px;
+  cursor:pointer;
+}
+button:hover{
+  background:#279143;
+}
+.small-note{
+  font-size:12px;
+  margin-top:15px;
+  opacity:.7;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Request Immediate Contact</h1>
+</header>
+
+<div class="section">
+
+<!-- QUICK SURVEY®™ -->
+<form action="#" method="POST">
+<h2>Client Contact Information Survey (QUICK SURVEY®™)</h2>
+
+<label>Full Name</label>
+<input type="text" name="client_fullname" required>
+
+<label>Age</label>
+<input type="number" name="client_age" min="18" required>
+
+<label>Relation to Detainee</label>
+<input type="text" name="relation" required>
+
+<label>Occupation</label>
+<input type="text" name="occupation" required>
+
+<label>Address (Street / City / State)</label>
+<input type="text" name="address" required>
+
+<button type="submit">Submit Survey</button>
+<p class="small-note">
+All information collected is used strictly for casefile processing and contact coordination with our agency.
+</p>
+</form>
+
+<!-- Request Contact Form -->
+<form action="#" method="POST">
+<h2>Request Contact / Case Information</h2>
+
+<label>Full Name</label>
+<input type="text" name="fullname" required>
+
+<label>Phone Number</label>
+<input type="tel" name="phone" required>
+
+<label>Email Address</label>
+<input type="email" name="email">
+
+<label>Defendant's Full Name</label>
+<input type="text" name="defendant">
+
+<label>County of Arrest</label>
+<input type="text" name="county">
+
+<label>Estimated Bond Amount (if known)</label>
+<input type="text" name="bondamount">
+
+<label>Preferred Contact Method</label>
+<select name="contact_method">
+<option>Phone Call</option>
+<option>Text Message</option>
+<option>Email</option>
+</select>
+
+<label>Additional Case Details</label>
+<textarea name="details"></textarea>
+
+<button type="submit">Submit Request</button>
+
+<p class="small-note">
+Submission of this form does not constitute bond approval. All requests are subject to identity verification and underwriting review.
+</p>
+
+</form>
+
+</div>
+
+<footer>
+Quick Release Bail Bonds®™ | Belton, Texas
+</footer>
+
+</body>
+</html>
