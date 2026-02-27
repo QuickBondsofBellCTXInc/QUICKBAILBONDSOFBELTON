@@ -21,6 +21,7 @@ body {
   background:var(--bg);
 }
 
+/* Header & Navigation */
 header {
   background:var(--primary);
   color:white;
@@ -42,10 +43,13 @@ nav a {
   text-decoration:none;
 }
 
-nav a:hover {
-  color:var(--gold);
+nav a:hover,
+nav a.active {
+  color: var(--gold);
+  font-weight:600;
 }
 
+/* Section */
 .section {
   max-width:1100px;
   margin:auto;
@@ -60,6 +64,7 @@ nav a:hover {
   margin-bottom:40px;
 }
 
+/* Staff cards */
 .card-grid {
   display:flex;
   flex-wrap:wrap;
@@ -73,8 +78,14 @@ nav a:hover {
   border-radius:8px;
   box-shadow:0 10px 25px rgba(0,0,0,0.05);
   min-width:260px;
+  transition: transform 0.2s ease;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
 footer {
   background:var(--primary);
   color:white;
@@ -90,11 +101,12 @@ footer {
 <header>
 <h1>Quick Release Bail Bonds®™</h1>
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-<a href="legal.html">Legal</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="staff.html" class="active">Staff</a>
+  <a href="legal.html">Legal</a>
 </nav>
 </header>
 
@@ -102,17 +114,15 @@ footer {
 <h2>Our Professional Team</h2>
 
 <div class="card-grid">
-
-<div class="card"><strong>Sol Re</strong><br>Owner</div>
-<div class="card"><strong>Dorian Wes</strong><br>General Manager</div>
-<div class="card"><strong>Steve Scottes</strong><br>Senior Bond Agent</div>
-<div class="card"><strong>Sara Malley</strong><br>Bond Agent</div>
-<div class="card"><strong>Spencer Dave's</strong><br>Bond Agent</div>
-<div class="card"><strong>Terral Walker</strong><br>Bond Agent</div>
-<div class="card"><strong>Janet Jo Phraser</strong><br>Administrative Secretary</div>
-<div class="card"><strong>Alec Reeves</strong><br>Chief Financial Administrator</div>
-<div class="card"><strong>Amandra Solarez</strong><br>Desk Clerk</div>
-
+  <div class="card"><strong>Sol Re</strong><br>Owner</div>
+  <div class="card"><strong>Dorian Wes</strong><br>General Manager</div>
+  <div class="card"><strong>Steve Scottes</strong><br>Senior Bond Agent</div>
+  <div class="card"><strong>Sara Malley</strong><br>Bond Agent</div>
+  <div class="card"><strong>Spencer Dave's</strong><br>Bond Agent</div>
+  <div class="card"><strong>Terral Walker</strong><br>Bond Agent</div>
+  <div class="card"><strong>Janet Jo Phraser</strong><br>Administrative Secretary</div>
+  <div class="card"><strong>Alec Reeves</strong><br>Chief Financial Administrator</div>
+  <div class="card"><strong>Amandra Solarez</strong><br>Desk Clerk</div>
 </div>
 </section>
 
