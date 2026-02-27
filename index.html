@@ -5,70 +5,75 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quick Release Bail Bonds®™ | Belton, TX</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Poppins for modern commercial vibe -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --primary:#0B1F3B;
-  --accent:#1C3D7A;
-  --cta:#2FA84F;
-  --gold:#C6A85B;
-  --bg:#F3F6FA;
+  --primary: #7FFF00;   /* slime green */
+  --accent: #FF0000;    /* bright red */
+  --secondary: #FFFFFF; /* white */
+  --bg: #FAFAFA;        /* clean light background */
 }
 
 body {
   margin:0;
-  font-family:'Inter',sans-serif;
-  background:var(--bg);
-  color:#1b1b1b;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: #1b1b1b;
 }
 
+/* Header & Navigation */
 header {
-  background:var(--primary);
-  color:white;
-  padding:22px 40px;
+  background: var(--primary);
+  color: var(--secondary);
+  padding: 20px 40px;
   display:flex;
-  justify-content:space-between;
-  align-items:center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
-  font-family:'Playfair Display',serif;
-  font-size:22px;
-  margin:0;
-  letter-spacing:.5px;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
 }
 
 nav a {
-  color:white;
-  margin-left:25px;
-  text-decoration:none;
-  font-weight:500;
+  color: var(--secondary);
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
 nav a:hover {
-  color:var(--gold);
+  color: var(--accent);
 }
 
+nav a.active {
+  color: var(--accent);
+}
+
+/* Hero Section */
 .hero {
-  background:linear-gradient(135deg,var(--primary),var(--accent));
-  color:white;
-  text-align:center;
-  padding:110px 20px;
-  animation:fadeIn 1.2s ease;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: var(--secondary);
+  text-align: center;
+  padding: 100px 20px;
 }
 
 .hero h2 {
-  font-family:'Playfair Display',serif;
-  font-size:40px;
-  margin-bottom:15px;
+  font-size: 42px;
+  margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .cta {
   display:inline-block;
   margin-top:25px;
-  background:var(--cta);
-  color:white;
+  background: var(--secondary);
+  color: var(--primary);
   padding:16px 32px;
   border-radius:6px;
   text-decoration:none;
@@ -77,9 +82,11 @@ nav a:hover {
 }
 
 .cta:hover {
-  background:#279143;
+  background: var(--accent);
+  color: var(--secondary);
 }
 
+/* Sections */
 .section {
   max-width:1100px;
   margin:auto;
@@ -87,11 +94,12 @@ nav a:hover {
 }
 
 .section h3 {
-  color:var(--primary);
-  font-size:26px;
-  margin-bottom:20px;
+  color: var(--primary);
+  font-size:28px;
+  margin-bottom:30px;
 }
 
+/* Card Grid */
 .card-grid {
   display:flex;
   flex-wrap:wrap;
@@ -99,22 +107,24 @@ nav a:hover {
 }
 
 .card {
-  background:white;
+  background: var(--secondary);
   padding:28px;
   border-radius:8px;
   box-shadow:0 10px 25px rgba(0,0,0,0.05);
   flex:1;
   min-width:280px;
   transition:.3s;
+  text-align:center;
 }
 
 .card:hover {
   transform:translateY(-6px);
 }
 
+/* Footer */
 footer {
-  background:var(--primary);
-  color:white;
+  background: var(--primary);
+  color: var(--secondary);
   text-align:center;
   padding:40px 20px;
   font-size:14px;
@@ -123,17 +133,13 @@ footer {
 .disclaimer {
   margin-top:15px;
   font-size:12px;
-  opacity:.7;
+  opacity:.8;
   max-width:900px;
   margin-left:auto;
   margin-right:auto;
   line-height:1.5;
 }
 
-@keyframes fadeIn {
-  from {opacity:0;}
-  to {opacity:1;}
-}
 </style>
 </head>
 
@@ -142,10 +148,11 @@ footer {
 <header>
 <h1>Quick Release Bail Bonds®™</h1>
 <nav>
-<a href="index.html">Home</a>
+<a href="index.html" class="active">Home</a>
 <a href="about.html">About</a>
 <a href="services.html">Services</a>
 <a href="contact.html">Contact</a>
+<a href="staff.html">Staff</a>
 <a href="legal.html">Legal</a>
 </nav>
 </header>
@@ -171,7 +178,7 @@ QuickReleaseBelton@consultant.com<br>
 Quick Release Bail Bonds®™<br>
 
 <div class="disclaimer">
-Quick Release Bail Bonds®™ operates as a privately directed bail bond service within Bell County jurisdiction. All bonds are subject to approval, underwriting review, and compliance with applicable Texas statutes. Referral assistance for rehabilitation or mental health placement does not constitute medical or legal advice. Payment methods may be subject to verification and processing review prior to bond execution.
+Quick Release Bail Bonds®™ provides 24/7 bail assistance in Bell County. All bonds are subject to verification and compliance with Texas statutes. Referral assistance does not constitute legal advice.
 </div>
 </footer>
 
