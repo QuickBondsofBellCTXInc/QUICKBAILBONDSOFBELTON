@@ -1,78 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Request Contact | Quick Release Bail Bonds®™</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quick Release Bail Bonds®™ | Request Contact</title>
+
+<!-- Poppins font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-body{
-  font-family:Arial, sans-serif;
+:root {
+  --primary: #7FFF00;   /* slime green */
+  --accent: #FF0000;    /* red */
+  --secondary: #FFFFFF; /* white */
+  --bg: #FAFAFA;        /* light background */
+}
+
+body {
   margin:0;
-  background:#F3F6FA;
-  color:#1b1b1b;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: #1b1b1b;
 }
-header, footer{
-  background:#0B1F3B;
-  color:white;
-  text-align:center;
-  padding:20px;
+
+/* Header & Navigation */
+header {
+  background: var(--primary);
+  color: var(--secondary);
+  padding: 20px 40px;
+  text-align: center;
 }
-.section{
-  max-width:800px;
-  margin:auto;
-  padding:50px 20px;
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
 }
-form{
-  background:white;
-  padding:30px;
-  border-radius:8px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.05);
-  margin-bottom:40px;
+
+/* Navigation bar */
+nav {
+  text-align: center;
+  margin-top: 15px;
 }
-form h2{
-  color:#0e1c36;
-  margin-bottom:20px;
+
+nav a {
+  color: var(--secondary);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
 }
-label{
-  display:block;
-  margin-top:15px;
-  font-weight:600;
+
+nav a:hover {
+  color: var(--accent);
 }
-input, select, textarea{
-  width:100%;
-  padding:10px;
-  margin-top:5px;
-  border:1px solid #ccc;
-  border-radius:4px;
-  font-size:14px;
+
+nav a.active {
+  color: var(--accent);
 }
-textarea{
-  resize:vertical;
-  min-height:100px;
+
+/* Section / Forms */
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 20px;
 }
-button{
-  margin-top:25px;
-  background:#2FA84F;
-  color:white;
-  border:none;
-  padding:14px 25px;
-  font-size:15px;
-  border-radius:5px;
-  cursor:pointer;
+
+form {
+  background: var(--secondary);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
 }
-button:hover{
-  background:#279143;
+
+form h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+  text-align: center;
 }
-.small-note{
-  font-size:12px;
-  margin-top:15px;
-  opacity:.7;
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  margin-top: 25px;
+  background: var(--primary);
+  color: var(--secondary);
+  border: none;
+  padding: 14px 25px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: var(--accent);
+}
+
+.small-note {
+  font-size: 12px;
+  margin-top: 15px;
+  opacity: 0.7;
+}
+
+/* Footer */
+footer {
+  background: var(--primary);
+  color: var(--secondary);
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+  margin-top: 40px;
 }
 </style>
 </head>
+
 <body>
 
 <header>
 <h1>Request Immediate Contact</h1>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="staff.html">Staff</a>
+  <a href="requests.html" class="active">Requests</a>
+  <a href="legal.html">Legal</a>
+</nav>
 </header>
 
 <div class="section">
