@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quick Release Bail Bonds®™ | Contact</title>
 
-<!-- Poppins font for modern commercial look -->
+<!-- Poppins font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -13,14 +13,15 @@
   --primary: #7FFF00;   /* slime green */
   --accent: #FF0000;    /* red */
   --secondary: #FFFFFF; /* white */
-  --bg: #FAFAFA;        /* light background */
+  --bg: #FAFAFA;
 }
 
 body {
-  margin:0;
+  margin: 0;
   font-family: 'Poppins', sans-serif;
   background: var(--bg);
   color: #1b1b1b;
+  line-height: 1.6;
 }
 
 /* Header & Navigation */
@@ -28,20 +29,18 @@ header {
   background: var(--primary);
   color: var(--secondary);
   padding: 20px 40px;
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
 }
 
-header h1 {
-  font-size: 24px;
-  margin: 0;
-  font-weight: 700;
+nav {
+  margin-top: 15px;
 }
 
 nav a {
   color: var(--secondary);
-  margin-left: 25px;
+  margin: 0 15px;
   text-decoration: none;
   font-weight: 600;
   transition: 0.2s;
@@ -55,41 +54,91 @@ nav a.active {
   color: var(--accent);
 }
 
-/* Contact Section */
+/* Section styling */
 .section {
   max-width: 900px;
   margin: auto;
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .section h2 {
   color: var(--primary);
   font-size: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
+/* Contact Box */
 .contact-box {
   background: var(--secondary);
   padding: 35px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
   margin-top: 30px;
   text-align: left;
 }
 
 .contact-box p {
-  margin: 15px 0;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 
-.contact-box a {
+/* Forms */
+form {
+  background: var(--secondary);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  margin-top: 40px;
+  text-align: left;
+}
+
+form h2 {
   color: var(--primary);
-  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
   font-weight: 600;
 }
 
-.contact-box a:hover {
-  color: var(--accent);
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  margin-top: 25px;
+  background: var(--primary);
+  color: var(--secondary);
+  border: none;
+  padding: 14px 25px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--accent);
+  color: var(--secondary);
+}
+
+.small-note {
+  font-size: 12px;
+  margin-top: 15px;
+  opacity: 0.7;
 }
 
 /* Footer */
@@ -98,22 +147,22 @@ footer {
   color: var(--secondary);
   text-align: center;
   padding: 40px 20px;
-  font-size: 14px;
+  margin-top: 60px;
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Quick Release Bail Bonds®™</h1>
+Quick Release Bail Bonds®™
 <nav>
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="services.html">Services</a>
   <a href="contact.html" class="active">Contact</a>
   <a href="staff.html">Staff</a>
+  <a href="requests.html">Requests</a>
   <a href="legal.html">Legal</a>
 </nav>
 </header>
@@ -122,28 +171,64 @@ footer {
 <h2>Contact Us 24/7</h2>
 
 <div class="contact-box">
-  <p><strong>Office Location:</strong><br>
-  108 E Central Ave<br>
-  Belton, TX 76513</p>
+<p><strong>Office Location:</strong><br>
+108 E Central Ave<br>
+Belton, TX 76513</p>
 
-  <p><strong>Phone:</strong><br>
-  <a href="tel:+12545955493">(254) 595-5493</a></p>
+<p><strong>Email:</strong><br>
+QuickReleaseBelton@consultant.com</p>
 
-  <p><strong>Email:</strong><br>
-  <a href="mailto:QuickReleaseBelton@consultant.com">QuickReleaseBelton@consultant.com</a></p>
+<p><strong>Service Hours:</strong><br>
+Available 24 Hours / 7 Days</p>
 
-  <p><strong>Service Hours:</strong><br>
-  Available 24 Hours / 7 Days</p>
-
-  <p><strong>Response Time:</strong><br>
-  Immediate Release Coordination</p>
+<p><strong>Response Time:</strong><br>
+Immediate Release Coordination</p>
 </div>
+
+<!-- Client Contact Form -->
+<form action="#" method="POST">
+<h2>Request Immediate Contact</h2>
+
+<label>Full Name</label>
+<input type="text" name="fullname" required>
+
+<label>Phone Number</label>
+<input type="tel" name="phone" required>
+
+<label>Email Address</label>
+<input type="email" name="email">
+
+<label>Defendant's Full Name</label>
+<input type="text" name="defendant">
+
+<label>County of Arrest</label>
+<input type="text" name="county">
+
+<label>Estimated Bond Amount (if known)</label>
+<input type="text" name="bondamount">
+
+<label>Preferred Contact Method</label>
+<select name="contact_method">
+<option>Phone Call</option>
+<option>Text Message</option>
+<option>Email</option>
+</select>
+
+<label>Additional Case Details</label>
+<textarea name="details"></textarea>
+
+<button type="submit">Submit Request</button>
+
+<p class="small-note">
+Submission of this form does not constitute bond approval. All requests are subject to identity verification and underwriting review.
+</p>
+
+</form>
 
 </section>
 
 <footer>
-Quick Release Bail Bonds®™<br>
-Belton & Bell County Release Coordination
+Quick Release Bail Bonds®™ | Belton & Bell County Release Coordination
 </footer>
 
 </body>
