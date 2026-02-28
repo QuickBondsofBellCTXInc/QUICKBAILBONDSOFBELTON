@@ -3,95 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quick Release Bail Bonds®™ | Our Staff</title>
+<title>Quick Release Bail Bonds®™ | Staff</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Poppins font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --primary:#0B1F3B;
-  --accent:#1C3D7A;
-  --gold:#C6A85B;
-  --bg:#F3F6FA;
+  --primary: #7FFF00;   /* slime green */
+  --accent: #FF0000;    /* red */
+  --secondary: #FFFFFF; /* white */
+  --bg: #FAFAFA;
 }
 
 body {
-  margin:0;
-  font-family:'Inter',sans-serif;
-  background:var(--bg);
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: #1b1b1b;
+  line-height: 1.6;
 }
 
 /* Header & Navigation */
 header {
-  background:var(--primary);
-  color:white;
-  padding:22px 40px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+  background: var(--primary);
+  color: var(--secondary);
+  padding: 20px 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
 }
 
-header h1 {
-  font-family:'Playfair Display',serif;
-  font-size:22px;
-  margin:0;
+nav {
+  margin-top: 15px;
 }
 
 nav a {
-  color:white;
-  margin-left:25px;
-  text-decoration:none;
+  color: var(--secondary);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
-nav a:hover,
+nav a:hover {
+  color: var(--accent);
+}
+
 nav a.active {
-  color: var(--gold);
-  font-weight:600;
+  color: var(--accent);
 }
 
-/* Section */
+/* Section styling */
 .section {
-  max-width:1100px;
-  margin:auto;
-  padding:80px 20px;
-  text-align:center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .section h2 {
-  color:var(--primary);
-  font-family:'Playfair Display',serif;
-  font-size:32px;
-  margin-bottom:40px;
+  color: var(--primary);
+  font-size: 32px;
+  margin-bottom: 40px;
 }
 
 /* Staff cards */
 .card-grid {
-  display:flex;
-  flex-wrap:wrap;
-  gap:25px;
-  justify-content:center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
 }
 
 .card {
-  background:white;
-  padding:28px;
-  border-radius:8px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.05);
-  min-width:260px;
+  background: var(--secondary);
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  min-width: 260px;
   transition: transform 0.2s ease;
+  font-weight: 500;
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
 
+.card strong {
+  color: var(--primary);
+  font-size: 18px;
+}
+
+.card span {
+  display: block;
+  color: #555;
+  margin-top: 5px;
+}
+
 /* Footer */
 footer {
-  background:var(--primary);
-  color:white;
-  text-align:center;
-  padding:40px 20px;
-  margin-top:60px;
+  background: var(--primary);
+  color: var(--secondary);
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
 }
 </style>
 </head>
@@ -99,13 +115,14 @@ footer {
 <body>
 
 <header>
-<h1>Quick Release Bail Bonds®™</h1>
+Quick Release Bail Bonds®™
 <nav>
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="services.html">Services</a>
   <a href="contact.html">Contact</a>
   <a href="staff.html" class="active">Staff</a>
+  <a href="requests.html">Requests</a>
   <a href="legal.html">Legal</a>
 </nav>
 </header>
@@ -114,15 +131,15 @@ footer {
 <h2>Our Professional Team</h2>
 
 <div class="card-grid">
-  <div class="card"><strong>Sol Re</strong><br>Owner</div>
-  <div class="card"><strong>Dorian Wes</strong><br>General Manager</div>
-  <div class="card"><strong>Steve Scottes</strong><br>Senior Bond Agent</div>
-  <div class="card"><strong>Sara Malley</strong><br>Bond Agent</div>
-  <div class="card"><strong>Spencer Dave's</strong><br>Bond Agent</div>
-  <div class="card"><strong>Terral Walker</strong><br>Bond Agent</div>
-  <div class="card"><strong>Janet Jo Phraser</strong><br>Administrative Secretary</div>
-  <div class="card"><strong>Alec Reeves</strong><br>Chief Financial Administrator</div>
-  <div class="card"><strong>Amandra Solarez</strong><br>Desk Clerk</div>
+  <div class="card"><strong>Sol Re</strong><span>Owner</span></div>
+  <div class="card"><strong>Dorian Wes</strong><span>General Manager</span></div>
+  <div class="card"><strong>Steve Scottes</strong><span>Senior Bond Agent</span></div>
+  <div class="card"><strong>Sara Malley</strong><span>Bond Agent</span></div>
+  <div class="card"><strong>Spencer Dave's</strong><span>Bond Agent</span></div>
+  <div class="card"><strong>Terral Walker</strong><span>Bond Agent</span></div>
+  <div class="card"><strong>Janet Jo Phraser</strong><span>Administrative Secretary</span></div>
+  <div class="card"><strong>Alec Reeves</strong><span>Chief Financial Administrator</span></div>
+  <div class="card"><strong>Amandra Solarez</strong><span>Desk Clerk</span></div>
 </div>
 </section>
 
