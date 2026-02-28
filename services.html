@@ -21,7 +21,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background: var(--bg);
   color: #1b1b1b;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 /* Header & Navigation */
@@ -36,7 +36,6 @@ header {
 
 nav {
   margin-top: 15px;
-  text-align: center;
 }
 
 nav a {
@@ -55,54 +54,40 @@ nav a.active {
   color: var(--accent);
 }
 
-/* Section styling */
+/* Section Styling */
 .section {
   max-width: 1100px;
   margin: auto;
-  padding: 60px 20px;
-}
-
-.section h1 {
-  color: var(--primary);
-  margin-bottom: 30px;
-  font-size: 32px;
-  text-align: center;
+  padding: 80px 20px;
 }
 
 .section h2 {
   color: var(--primary);
-  font-size: 26px;
-  margin-top: 30px;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.service-card {
+  background: var(--secondary);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+}
+
+.service-card h3 {
+  color: var(--primary);
   margin-bottom: 15px;
 }
 
-.section p, .section li {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-/* Boxes for sections */
-.section .box {
-  background: var(--secondary);
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  margin-bottom: 25px;
-}
-
-/* Lists */
-ol, ul {
+.service-card ol, .service-card ul {
   padding-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-/* Footer */
-footer {
-  background: var(--primary);
-  color: var(--secondary);
-  text-align: center;
-  padding: 40px 20px;
-  margin-top: 40px;
+.service-card li {
+  margin-bottom: 8px;
 }
 </style>
 </head>
@@ -122,55 +107,57 @@ Quick Release Bail Bonds®™
 </nav>
 </header>
 
-<div class="section">
-<h1>Payment & Funding Methods</h1>
+<section class="section">
+<h2>Our Payment & Funding Services</h2>
 
-<div class="box">
-<h2>Mobile BankPay®™</h2>
+<div class="service-card">
+<h3>Mobile BankPay®™</h3>
 <ol>
 <li>Use your government I.D.–verified mobile banking account to post the bond payment.</li>
-<li>Payment transmits through your mobile-banking platform into a company account assigned to a Financial Administrator.</li>
-<li>All account credentials are provided directly by your Licensed Bond Agent.</li>
-<li>Receipts and payment identifiers are delivered securely upon request.</li>
-<li>Bond payments must be confirmed by our Financial Department before placement with the Sheriff’s Office.</li>
-<li>Once confirmed, follow your Bond Agent’s instructions for release coordination.</li>
+<li>Payment transmitted through your preferred mobile-banking platform to our Financial Administrators.</li>
+<li>All instructions and company account credentials provided directly by your assigned Licensed Bond Agent.</li>
+<li>Transactional receipts and payment identifiers delivered via secure communication upon client request.</li>
+<li>All bond payments must be confirmed by our Financial Department before placement into the County account with the Sheriff’s Office.</li>
+<li>After digital and verbal confirmation, follow your assigned Bond Agent’s instructions for the next phase of release.</li>
 </ol>
 </div>
 
-<div class="box">
-<h2>Digital CashPay®™</h2>
+<div class="service-card">
+<h3>Digital CashPay®™</h3>
 <ol>
 <li>Post a bond using physical cash at a County-contracted public bonding terminal.</li>
-<li>I.D. verification and secondary confirmation via mobile device required.</li>
-<li>Follow all steps under direction of your Licensed Bond Agent.</li>
+<li>Requires in-terminal I.D. verification and secondary identity confirmation via mobile device.</li>
+<li>Follow instructions strictly from your assigned Licensed Bond Agent for the active casefile.</li>
 </ol>
 </div>
 
-<div class="box">
-<h2>Retail Clerk CashPay®™</h2>
+<div class="service-card">
+<h3>Retail Clerk CashPay®™</h3>
 <ol>
-<li>Your Bond Agent will provide the nearest participating retail location (e.g., CVS®™, Walgreens®™).</li>
+<li>Your Bond Agent provides the nearest participating retail location (CVS®, Walgreens®, or approved merchant).</li>
 <li>Receive a secure company payment barcode linked to your casefile.</li>
-<li>Present the barcode to the retail clerk and load the cash amount.</li>
-<li>Show valid government ID if requested.</li>
-<li>Keep your receipt and send a clear image to your Bond Agent.</li>
-<li>Payment is active only after Financial Department confirmation.</li>
+<li>Present barcode to the retail clerk and load the cash amount to the company account.</li>
+<li>Provide government ID if requested for compliance.</li>
+<li>Retain your printed transaction receipt and transmit an image to your Bond Agent for confirmation.</li>
+<li>Bond payment becomes active after confirmation from our Financial Department.</li>
 </ol>
 </div>
 
-<div class="box">
-<h2>Major Card Processing</h2>
+<div class="service-card">
+<h3>Major Card Processing</h3>
 <ul>
 <li>Visa®™</li>
 <li>Mastercard®™</li>
 </ul>
-<p>Cardholder verification required. Processing fees may apply. Funds must clear prior to bond execution.</p>
+<p>Cardholder verification is required. Processing fees and authorization review may apply. Funds must clear prior to bond execution.</p>
 </div>
-
-</div>
+</section>
 
 <footer>
-Quick Release Bail Bonds®™ | Belton, Texas
+108 E Central Ave, Belton, TX 76513<br>
+QuickReleaseBelton@consultant.com<br>
+Quick Release Bail Bonds®™<br>
+Belton & Bell County Release Coordination
 </footer>
 
 </body>
