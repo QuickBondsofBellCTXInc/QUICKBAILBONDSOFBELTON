@@ -3,161 +3,131 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quick Release Bail Bonds®™ | Services</title>
-
-<!-- Poppins font -->
+<title>Services | Quick Release Bail Bonds®™</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
 :root {
-  --primary: #7FFF00;   /* slime green */
-  --accent: #FF0000;    /* red */
-  --secondary: #FFFFFF; /* white */
-  --bg: #FAFAFA;
+  --primary:#7FFF00;   /* slime green */
+  --accent:#FF0000;    /* red */
+  --secondary:#FFFFFF; /* white */
+  --bg:#FAFAFA;        /* light background */
 }
 
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
+  margin:0;
+  font-family:'Poppins', sans-serif;
   background: var(--bg);
-  color: #1b1b1b;
-  line-height: 1.6;
+  color:#1b1b1b;
 }
 
-/* Header & Navigation */
 header {
   background: var(--primary);
   color: var(--secondary);
   padding: 20px 40px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 24px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav {
-  margin-top: 15px;
+header h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight:700;
 }
 
 nav a {
   color: var(--secondary);
-  margin: 0 15px;
+  margin-left: 25px;
   text-decoration: none;
   font-weight: 600;
-  transition: 0.2s;
+  transition:0.2s;
 }
 
-nav a:hover {
-  color: var(--accent);
-}
+nav a:hover, nav a.active { color: var(--accent); }
 
-nav a.active {
-  color: var(--accent);
-}
-
-/* Section Styling */
-.section {
-  max-width: 1100px;
-  margin: auto;
+.hero {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: var(--secondary);
+  text-align:center;
   padding: 80px 20px;
 }
 
-.section h2 {
-  color: var(--primary);
-  font-size: 32px;
-  margin-bottom: 30px;
-  text-align: center;
-}
+.hero h2 { font-size: 36px; margin-bottom:10px; font-weight:700; }
 
-.service-card {
+.section { max-width:1100px; margin:auto; padding:70px 20px; }
+
+.section h3 { color: var(--primary); font-size:28px; margin-bottom:30px; text-align:center; }
+
+.card-grid { display:flex; flex-wrap:wrap; gap:25px; }
+
+.card {
   background: var(--secondary);
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  margin-bottom: 40px;
+  padding:28px;
+  flex:1;
+  min-width:280px;
+  border-radius:8px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  transition:.3s;
 }
 
-.service-card h3 {
-  color: var(--primary);
-  margin-bottom: 15px;
-}
+.card:hover { transform:translateY(-6px); }
 
-.service-card ol, .service-card ul {
-  padding-left: 20px;
-  margin-bottom: 15px;
-}
+.assist { background:#111; color:white; text-align:center; padding:40px; }
 
-.service-card li {
-  margin-bottom: 8px;
-}
+footer { background: var(--primary); color: var(--secondary); text-align:center; padding:40px 20px; font-size:14px; }
 </style>
 </head>
 
 <body>
 
 <header>
-Quick Release Bail Bonds®™
+<h1>Quick Release Bail Bonds®™</h1>
 <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html" class="active">Services</a>
-  <a href="contact.html">Contact</a>
-  <a href="staff.html">Staff</a>
-  <a href="requests.html">Requests</a>
-  <a href="legal.html">Legal</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html" class="active">Services</a>
+<a href="contact.html">Contact</a>
+<a href="staff.html">Staff</a>
+<a href="legal.html">Legal</a>
+<a href="bondprocess.html">Bond Process</a>
 </nav>
 </header>
 
+<section class="hero">
+<h2>Professional Bail Services</h2>
+<p>Safe, fast, and verified release coordination in Bell County</p>
+</section>
+
 <section class="section">
-<h2>Our Payment & Funding Services</h2>
-
-<div class="service-card">
-<h3>Mobile BankPay®™</h3>
-<ol>
-<li>Use your government I.D.–verified mobile banking account to post the bond payment.</li>
-<li>Payment transmitted through your preferred mobile-banking platform to our Financial Administrators.</li>
-<li>All instructions and company account credentials provided directly by your assigned Licensed Bond Agent.</li>
-<li>Transactional receipts and payment identifiers delivered via secure communication upon client request.</li>
-<li>All bond payments must be confirmed by our Financial Department before placement into the County account with the Sheriff’s Office.</li>
-<li>After digital and verbal confirmation, follow your assigned Bond Agent’s instructions for the next phase of release.</li>
-</ol>
+<h3>Our Core Services</h3>
+<div class="card-grid">
+<div class="card">
+<b>Pretrial Release Specialists</b><br><br>
+We expedite pretrial release and detention coordination for clients in Bell County.
 </div>
-
-<div class="service-card">
-<h3>Digital CashPay®™</h3>
-<ol>
-<li>Post a bond using physical cash at a County-contracted public bonding terminal.</li>
-<li>Requires in-terminal I.D. verification and secondary identity confirmation via mobile device.</li>
-<li>Follow instructions strictly from your assigned Licensed Bond Agent for the active casefile.</li>
-</ol>
+<div class="card">
+<b>Mental & Substance Rehab Placement</b><br><br>
+Assistance with court-approved mental health or substance abuse rehabilitation admissions.
 </div>
-
-<div class="service-card">
-<h3>Retail Clerk CashPay®™</h3>
-<ol>
-<li>Your Bond Agent provides the nearest participating retail location (CVS®, Walgreens®, or approved merchant).</li>
-<li>Receive a secure company payment barcode linked to your casefile.</li>
-<li>Present barcode to the retail clerk and load the cash amount to the company account.</li>
-<li>Provide government ID if requested for compliance.</li>
-<li>Retain your printed transaction receipt and transmit an image to your Bond Agent for confirmation.</li>
-<li>Bond payment becomes active after confirmation from our Financial Department.</li>
-</ol>
+<div class="card">
+<b>Casefile Management</b><br><br>
+All client casefiles require an actively funded debit card on file for proper documentation and bond processing.
 </div>
-
-<div class="service-card">
-<h3>Major Card Processing</h3>
-<ul>
-<li>Visa®™</li>
-<li>Mastercard®™</li>
-</ul>
-<p>Cardholder verification is required. Processing fees and authorization review may apply. Funds must clear prior to bond execution.</p>
+<div class="card">
+<b>Payment & Funding Options</b><br><br>
+Mobile BankPay®™, Digital CashPay®™, and Retail Clerk CashPay®™ – all verified and secure methods for posting bonds.
+</div>
 </div>
 </section>
 
+<section class="assist">
+For further assistance or any questions, concerns, or inquiries, please contact our office and ask to speak with a <b>Licensed Agent</b>.
+</section>
+
 <footer>
-108 E Central Ave, Belton, TX 76513<br>
-QuickReleaseBelton@consultant.com<br>
 Quick Release Bail Bonds®™<br>
-Belton & Bell County Release Coordination
+Belton & Bell County Release Coordination<br>
+https://quickbondsofbellctxinc.github.io/QUICKBAILBONDSOFBELTON/
 </footer>
 
 </body>
