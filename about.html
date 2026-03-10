@@ -2,135 +2,77 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quick Release Bail Bonds®™ | About</title>
-
-<!-- Poppins font -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>About | Quick Release Bail Bonds®™</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
-:root {
-  --primary: #7FFF00;   /* slime green */
-  --accent: #FF0000;    /* red */
-  --secondary: #FFFFFF; /* white */
-  --bg: #FAFAFA;
-}
-
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: var(--bg);
-  color: #1b1b1b;
-  line-height: 1.6;
-}
-
-/* Header & Navigation */
-header {
-  background: var(--primary);
-  color: var(--secondary);
-  padding: 20px 40px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 24px;
-}
-
-nav {
-  margin-top: 15px;
-}
-
-nav a {
-  color: var(--secondary);
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.2s;
-}
-
-nav a:hover {
-  color: var(--accent);
-}
-
-nav a.active {
-  color: var(--accent);
-}
-
-/* Section Styling */
-.section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 80px 20px;
-}
-
-.section h2 {
-  color: var(--primary);
-  font-size: 32px;
-  margin-bottom: 25px;
-  text-align: center;
-}
-
-.section p, .section ul {
-  font-size: 16px;
-  margin-bottom: 20px;
-  color: #1b1b1b;
-}
-
-.section ul {
-  list-style: disc;
-  padding-left: 40px;
-}
-
-/* Footer */
-footer {
-  background: var(--primary);
-  color: var(--secondary);
-  text-align: center;
-  padding: 40px 20px;
-  margin-top: 60px;
-}
+body{ margin:0; font-family:Poppins; background:#fafafa; color:#222; }
+header{ background:#7FFF00; padding:18px 40px; display:flex; justify-content:space-between; align-items:center; }
+header h1{ margin:0; font-size:22px; color:white; }
+nav a{ color:white; text-decoration:none; margin-left:20px; font-weight:600; }
+.hero{ height:450px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("abouthero.jpg"); background-size:cover; background-position:center; color:white; }
+.hero h2{ font-size:42px; margin-bottom:10px; }
+.section{ max-width:1100px; margin:auto; padding:70px 20px; }
+.section h3{ color:#7FFF00; margin-bottom:20px; }
+.cards{ display:flex; flex-wrap:wrap; gap:20px; }
+.card{ background:white; padding:25px; flex:1; min-width:260px; border-radius:8px; box-shadow:0 10px 20px rgba(0,0,0,.08); }
+.badges{ display:flex; flex-wrap:wrap; gap:20px; align-items:center; margin-top:20px; }
+.badges img{ height:55px; }
+.assist{ background:#111; color:white; text-align:center; padding:40px; }
+footer{ background:#7FFF00; color:white; text-align:center; padding:35px; font-size:14px; }
 </style>
 </head>
-
 <body>
 
 <header>
-Quick Release Bail Bonds®™
+<h1>Quick Release Bail Bonds®™</h1>
 <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html" class="active">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-  <a href="staff.html">Staff</a>
-  <a href="requests.html">Requests</a>
-  <a href="legal.html">Legal</a>
+<a href="index.html">Home</a>
+<a href="about.html" class="active">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="staff.html">Staff</a>
+<a href="legal.html">Legal</a>
+<a href="bondprocess.html">Bond Process</a>
 </nav>
 </header>
 
+<section class="hero">
+<h2>About Quick Release Bail Bonds®™</h2>
+<p>Providing structured, compassionate, and immediate assistance in Bell County.</p>
+</section>
+
 <section class="section">
-<h2>Our Founding & Leadership</h2>
-<p>Quick Release Bail Bonds®™ was founded with a clear purpose: to provide structured, disciplined, and compassionate bail bond services to the families of Bell County. Established by a locally rooted entrepreneur with a background in operational management and financial oversight, the agency was built on the principle that urgency must be balanced with responsibility.</p>
-<p>From its founding in Belton, Texas, the company has maintained a hands-on leadership structure focused on compliance, accountability, and direct community engagement. Every casefile is approached with discretion, precision, and respect for the legal process.</p>
+<h3>Our Mission</h3>
+<p>Quick Release Bail Bonds®™ is committed to providing fast, secure, and legally compliant bail assistance. Our team works closely with Bell County detention staff to ensure timely and smooth pretrial releases, rehabilitation placements, and casefile management.</p>
+</section>
 
-<h2>Corporate Governance</h2>
-<p>Quick Release Bail Bonds®™ operates under a privately directed leadership framework with disciplined oversight and strict adherence to Texas bail bond statutes and Bell County regulatory standards. Internal financial controls, identity verification protocols, and documented compliance procedures guide all bond execution activity.</p>
+<section class="section">
+<h3>Company Credentials</h3>
+<div class="badges">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Better_Business_Bureau_Logo.svg" alt="BBB">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/US_flag_51_stars.svg" alt="US Flag">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Seal_of_Texas.svg" alt="Texas Seal">
+</div>
+<p>We maintain professional recognition and coordination with public and private compliance organizations, ensuring our clients receive trusted and lawful services.</p>
+</section>
 
-<h2>Community & Outreach Commitment</h2>
-<ul>
-<li>Rehabilitation placement referral guidance</li>
-<li>Mental health coordination assistance resources</li>
-<li>Community-based and faith-oriented partnership support</li>
-<li>Educational guidance for first-time bond clients</li>
-</ul>
-<p>Our outreach philosophy recognizes that many families encounter the bail process unexpectedly. We aim to provide not only release coordination, but also responsible direction toward stabilizing resources when appropriate.</p>
+<section class="section">
+<h3>Our Specialized Services</h3>
+<div class="cards">
+<div class="card"><b>Pretrial Release</b><br>Expert assistance in pretrial release coordination throughout Bell County.</div>
+<div class="card"><b>Mental Health & Rehab Placement</b><br>Facilitation of court-approved mental health or substance abuse rehabilitation admissions.</div>
+<div class="card"><b>Casefile Management</b><br>All client casefiles require an actively funded debit card to remain on file for documentation and processing purposes.</div>
+</div>
+</section>
 
-<h2>Strategic Vision</h2>
-<p>Belton serves as the operational anchor of the company’s growth strategy. Expansion is pursued carefully and deliberately, ensuring that service quality, financial integrity, and regulatory compliance remain central to every region served.</p>
+<section class="assist">
+For further assistance or for any questions, concerns, or inquiries please contact our office and ask to speak with a <b>Licensed Agent</b>.
 </section>
 
 <footer>
-108 E Central Ave, Belton, TX 76513<br>
-QuickReleaseBelton@consultant.com<br>
-Quick Release Bail Bonds®™<br>
-Belton & Bell County Release Coordination
+Quick Release Bail Bonds®™   Belton Texas<br>
+https://quickbondsofbellctxinc.github.io/QUICKBAILBONDSOFBELTON/
 </footer>
 
 </body>
