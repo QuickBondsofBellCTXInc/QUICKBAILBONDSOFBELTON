@@ -2,144 +2,141 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quick Release Bail Bonds®™ | Home</title>
-
-<!-- Poppins font -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Quick Release Bail Bonds®™ | Belton TX</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
-:root {
-  --primary: #7FFF00;   /* slime green */
-  --accent: #FF0000;    /* red */
-  --secondary: #FFFFFF; /* white */
-  --bg: #FAFAFA;
+body{
+  margin:0;
+  font-family:Poppins;
+  background:#fafafa;
+  color:#222;
 }
 
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: var(--bg);
-  color: #1b1b1b;
-  line-height: 1.6;
+header{
+  background:#7FFF00;
+  padding:18px 40px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
 }
 
-/* Header & Navigation */
-header {
-  background: var(--primary);
-  color: var(--secondary);
-  padding: 20px 40px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 24px;
+header h1{
+  margin:0;
+  font-size:22px;
+  color:white;
 }
 
-nav {
-  margin-top: 15px;
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:600;
 }
 
-nav a {
-  color: var(--secondary);
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.2s;
+.hero{
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url("paymentmethods.jpg");
+  background-size:cover;
+  background-position:center;
+  color:white;
 }
 
-nav a:hover {
-  color: var(--accent);
+.hero h2{
+  font-size:42px;
+  margin-bottom:10px;
 }
 
-nav a.active {
-  color: var(--accent);
+.countdown{
+  font-size:22px;
+  margin-top:10px;
+  color:#7FFF00;
 }
 
-/* Hero Section */
-.hero {
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: var(--secondary);
-  text-align: center;
-  padding: 120px 20px;
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:70px 20px;
 }
 
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 15px;
+.section h3{
+  color:#7FFF00;
+  margin-bottom:20px;
 }
 
-.hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
 }
 
-.hero a.cta {
-  background: var(--secondary);
-  color: var(--primary);
-  padding: 16px 36px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
+.card{
+  background:white;
+  padding:25px;
+  flex:1;
+  min-width:260px;
+  border-radius:8px;
+  box-shadow:0 10px 20px rgba(0,0,0,.08);
 }
 
-.hero a.cta:hover {
-  background: var(--accent);
-  color: var(--secondary);
+.badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  align-items:center;
 }
 
-/* Section Styling */
-.section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 80px 20px;
-  text-align: center;
+.badges img{
+  height:55px;
 }
 
-.section h2 {
-  color: var(--primary);
-  font-size: 32px;
-  margin-bottom: 40px;
+.calculator input{
+  padding:10px;
+  margin:10px 0;
+  width:100%;
 }
 
-/* Card Grid */
-.card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
+.calculator button{
+  padding:12px;
+  background:#7FFF00;
+  border:none;
+  font-weight:600;
+  cursor:pointer;
 }
 
-.card {
-  background: var(--secondary);
-  padding: 28px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  min-width: 260px;
-  transition: transform 0.2s ease;
+.form input, .form textarea{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.form button{
+  padding:14px;
+  background:#7FFF00;
+  border:none;
+  font-weight:600;
+  cursor:pointer;
 }
 
-.card strong {
-  color: var(--primary);
-  font-size: 18px;
+.assist{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:40px;
 }
 
-.card span {
-  display: block;
-  color: #555;
-  margin-top: 5px;
-}
-
-/* Footer */
-footer {
-  background: var(--primary);
-  color: var(--secondary);
-  text-align: center;
-  padding: 40px 20px;
-  margin-top: 60px;
+footer{
+  background:#7FFF00;
+  color:white;
+  text-align:center;
+  padding:35px;
+  font-size:14px;
 }
 </style>
 </head>
@@ -147,39 +144,108 @@ footer {
 <body>
 
 <header>
-Quick Release Bail Bonds®™
+<h1>Quick Release Bail Bonds®™</h1>
 <nav>
-  <a href="index.html" class="active">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-  <a href="staff.html">Staff</a>
-  <a href="requests.html">Requests</a>
-  <a href="legal.html">Legal</a>
+  <a href="#">Home</a>
+  <a href="#services">Services</a>
+  <a href="#calculator">Bond Calculator</a>
+  <a href="#contact">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
-<h1>Structured. Compassionate. Immediate.</h1>
-<p>Belton & Bell County 24/7 Release Coordination</p>
-<a href="tel:+12545955493" class="cta">(254) 595-5493</a>
+<h2>Immediate Jail Release Assistance</h2>
+<div class="countdown"> Average Release Processing: <span id="timer">02:00:00</span> </div>
 </section>
 
-<section class="section">
-<h2>Executive Leadership</h2>
-<div class="card-grid">
-  <div class="card"><strong>Sol Rea</strong><span>Founder & Managing Director</span></div>
-  <div class="card"><strong>Lesa Rae Rea</strong><span>Community Relations Director</span></div>
-  <div class="card"><strong>Dorian Wes</strong><span>General Manager</span></div>
+<section id="services" class="section">
+<h3>Professional Bail Services</h3>
+<div class="cards">
+  <div class="card">
+    <b>Pre-Trial Release Specialists</b><br><br>
+    We specialize in expedited detention release and pretrial case coordination throughout Bell County.
+  </div>
+  <div class="card">
+    <b>Mental Health / Rehab Placement</b><br><br>
+    Assistance with court approved mental health or substance abuse rehabilitation admission.
+  </div>
+  <div class="card">
+    <b>Casefile Processing Policy</b><br><br>
+    All client casefiles require an actively funded debit card to remain on file for documentation and bond processing.
+  </div>
 </div>
 </section>
 
+<section class="section">
+<h3>Professional Credentials</h3>
+<div class="badges">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Better_Business_Bureau_Logo.svg">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/US_flag_51_stars.svg">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Seal_of_Texas.svg">
+</div>
+<p>
+Quick Release Bail Bonds®™ maintains working coordination with Bell County detention staff and maintains professional recognition with various public and private compliance organizations.
+</p>
+</section>
+
+<section id="calculator" class="section">
+<h3>Bail Bond Calculator</h3>
+<div class="calculator">
+  <input id="bail" placeholder="Enter bail amount">
+  <button onclick="calc()">Calculate Bond Cost</button>
+  <p id="result"></p>
+</div>
+</section>
+
+<section class="section form">
+<h3>Casefile Submission Request</h3>
+<form>
+  <input placeholder="Your Name">
+  <input placeholder="Phone Number">
+  <input placeholder="Detainee Name">
+  <input placeholder="Booking ID">
+  <textarea placeholder="Additional Case Information"></textarea>
+  <button>Submit Casefile Request</button>
+</form>
+</section>
+
+<section id="contact" class="section">
+<h3>Contact Information</h3>
+<b>Quick Release Bail Bonds®™</b><br><br>
+Belton Office: +1 (254) 647-4677<br>
+Agent Contact: +1 (972) 559-9328<br>
+Direct Desk Contact: Steve Scottes<br><br>
+108 E Central Ave<br>
+Belton TX 76513  <br><br>
+<b>Bell County Jail Intake Line</b><br>
++1 (254) 470-7997
+</section>
+
+<section class="assist">
+For further assistance or for any questions, concerns, or inquiries please contact our office and ask to speak with a <b>Licensed Agent</b>.
+</section>
+
 <footer>
-108 E Central Ave, Belton, TX 76513<br>
-QuickReleaseBelton@consultant.com<br>
-Quick Release Bail Bonds®™<br>
-Belton & Bell County Release Coordination
+Quick Release Bail Bonds®™   Belton Texas    <br><br>
+https://quickbondsofbellctxinc.github.io/QUICKBAILBONDSOFBELTON/
 </footer>
+
+<script>
+function calc(){
+  let bail=document.getElementById("bail").value;
+  let fee=bail*.10;
+  document.getElementById("result").innerHTML="Estimated Bond Fee: $"+fee;
+}
+
+let timer=7200;
+setInterval(function(){
+  timer--;
+  let h=Math.floor(timer/3600);
+  let m=Math.floor((timer%3600)/60);
+  let s=timer%60;
+  document.getElementById("timer").innerHTML= h+":"+m+":"+s;
+},1000);
+</script>
 
 </body>
 </html>
