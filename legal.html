@@ -3,98 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quick Release Bail Bonds®™ | Legal</title>
-
+<title>Legal & Compliance | Quick Release Bail Bonds®™</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
 :root {
   --primary: #7FFF00;   /* slime green */
   --accent: #FF0000;    /* red */
   --secondary: #FFFFFF; /* white */
-  --bg: #FAFAFA;
+  --bg: #FAFAFA;        /* background */
 }
 
 body {
-  margin: 0;
+  margin:0;
   font-family: 'Poppins', sans-serif;
   background: var(--bg);
   color: #1b1b1b;
-  line-height: 1.6;
 }
 
-/* Header & Navigation */
 header {
   background: var(--primary);
   color: var(--secondary);
-  padding: 20px 40px;
+  padding: 22px 40px;
   text-align: center;
-  font-weight: 700;
-  font-size: 24px;
+}
+
+header h1 {
+  margin:0;
+  font-size:24px;
+  font-weight:700;
 }
 
 nav {
-  margin-top: 15px;
+  text-align:center;
+  margin-top:15px;
 }
 
 nav a {
   color: var(--secondary);
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.2s;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:600;
+  transition:.2s;
 }
 
-nav a:hover {
-  color: var(--accent);
+nav a:hover, nav a.active { color: var(--accent); }
+
+.hero {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: var(--secondary);
+  text-align:center;
+  padding:80px 20px;
 }
 
-nav a.active {
-  color: var(--accent);
+.hero h2 {
+  font-size:32px;
+  margin-bottom:10px;
+  font-weight:700;
 }
 
-/* Section */
 .section {
-  max-width: 900px;
-  margin: auto;
-  padding: 80px 20px;
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+  line-height:1.6;
 }
 
-.section h2 {
+.section h3 {
   color: var(--primary);
-  font-size: 32px;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-bottom:25px;
+  text-align:center;
+  font-size:28px;
 }
 
-/* Legal text */
-.section p, .section ul {
-  margin-bottom: 20px;
+.government-seals {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+  margin:30px 0;
 }
 
-.section ul {
-  padding-left: 20px;
+.government-seals img {
+  height:60px;
+  width:auto;
 }
 
-.section li {
-  margin-bottom: 10px;
+.back-home { text-align:center; margin:30px 0; }
+.back-home a {
+  text-decoration:none; padding:12px 28px; background:var(--accent); color:white; border-radius:6px; font-weight:600; transition:.3s;
+}
+.back-home a:hover { background: var(--primary); }
+
+.assist {
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:40px;
+  margin-top:40px;
 }
 
-/* Footer */
 footer {
   background: var(--primary);
   color: var(--secondary);
-  text-align: center;
-  padding: 40px 20px;
-  margin-top: 60px;
+  text-align:center;
+  padding:40px 20px;
+  font-size:14px;
+  margin-top:40px;
 }
 </style>
 </head>
-
 <body>
 
 <header>
-Quick Release Bail Bonds®™
+<h1>Legal & Compliance</h1>
 <nav>
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
@@ -106,27 +127,49 @@ Quick Release Bail Bonds®™
 </nav>
 </header>
 
+<section class="hero">
+<h2>Compliance, Regulation & Legal Oversight</h2>
+<p>Ensuring lawful, professional, and regulated bond processing throughout Bell County</p>
+</section>
+
 <section class="section">
-<h2>Legal & Compliance Notice</h2>
+<h3>Legal Notices & Compliance Information</h3>
 
-<p>Quick Release Bail Bonds®™ operates in accordance with applicable Texas bail bond statutes and Bell County regulatory standards.</p>
+<p>Quick Release Bail Bonds®™ operates under all applicable Texas bail bond statutes, Bell County regulatory standards, and federal financial regulations.</p>
 
-<p>All services are subject to underwriting approval, identity verification, and financial review prior to bond filing.</p>
+<p>All bond services are subject to underwriting approval, identity verification, and financial review prior to filing with the Sheriff’s Office. Payment methods must clear before bond execution.</p>
 
-<p>Payment processing timelines vary by funding method. Funds must clear prior to bond execution.</p>
+<p><strong>2020 Fraud Prevention Act:</strong>  
+Clients and cosigners are notified that falsification of information, identity misrepresentation, or attempted unauthorized transactions in connection with bond posting is punishable under federal and state law. Our agency maintains full reporting and auditing capabilities in accordance with this Act.</p>
 
-<p>Rehabilitation and mental health placement referrals are provided as informational support services only and do not replace licensed medical, psychiatric, or legal counsel.</p>
+<p>Rehabilitation and mental health referrals provided are for informational purposes only and do not replace licensed medical, psychiatric, or legal counsel.</p>
 
-<p>Use of mobile payment platforms remains subject to availability and verification protocols.</p>
+<p>Use of mobile or retail payment platforms is subject to verification, availability, and adherence to all applicable financial compliance regulations.</p>
 
-<p>© 2026 Quick Release Bail Bonds®™ | Belton, Texas</p>
+<div class="government-seals">
+<img src="images/us-flag.png" alt="US Flag">
+<img src="images/texas-seal.png" alt="Texas Seal">
+<img src="images/bell-county-badge.png" alt="Bell County Badge">
+<img src="images/irs-logo.png" alt="IRS Logo">
+<img src="images/fdic-logo.png" alt="FDIC Logo">
+<img src="images/ftc-logo.png" alt="FTC Logo">
+<img src="images/bbb-logo.png" alt="Better Business Bureau Logo">
+<img src="images/bond-license.png" alt="Official Bond Licensing Symbol">
+</div>
+
+<div class="back-home">
+  <a href="index.html">Back to Home</a>
+</div>
+
+</section>
+
+<section class="assist">
+For further assistance or any questions, concerns, or inquiries, please contact our office and ask to speak with a <b>Licensed Agent</b>.
 </section>
 
 <footer>
-108 E Central Ave, Belton, TX 76513<br>
-QuickReleaseBelton@consultant.com<br>
-Quick Release Bail Bonds®™<br>
-Belton & Bell County Release Coordination
+Quick Release Bail Bonds®™ | Belton, Texas<br>
+https://quickbondsofbellctxinc.github.io/QUICKBAILBONDSOFBELTON/
 </footer>
 
 </body>
