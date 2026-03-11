@@ -1,17 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 <title>Quick Release Bail Bonds®™ | Belton TX</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+body{
+margin:0;
+font-family:Poppins;
+background:#fafafa;
+color:#222;
+}
+
+header{
+background:#7FFF00;
+padding:18px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h1{
+margin:0;
+font-size:22px;
+color:white;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:600;
+}
+
+nav a:hover{
+color:#FF0000;
+}
+
+.hero{
+height:500px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url("images/paymentmethods.jpg");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero h2{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.countdown{
+font-size:22px;
+margin-top:10px;
+color:#7FFF00;
+}
+
+.section{
+max-width:1100px;
+margin:auto;
+padding:70px 20px;
+}
+
+.section h3{
+color:#7FFF00;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+flex:1;
+min-width:260px;
+border-radius:8px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.calculator{
+max-width:500px;
+}
+
+.calculator input{
+padding:12px;
+width:100%;
+margin-bottom:10px;
+border:1px solid #ddd;
+}
+
+.calculator button{
+padding:14px;
+background:#7FFF00;
+border:none;
+font-weight:600;
+cursor:pointer;
+width:100%;
+}
+
+.assist{
+background:#111;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+footer{
+background:#7FFF00;
+color:white;
+text-align:center;
+padding:35px;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
+
 <h1>Quick Release Bail Bonds®™</h1>
 
 <nav>
@@ -24,14 +146,18 @@
 <a href="contact.html">Contact</a>
 <a href="legal.html">Legal</a>
 </nav>
+
 </header>
 
 <section class="hero">
+
 <h2>Immediate Jail Release Assistance</h2>
+
 <div class="countdown">
 Average Release Processing:
 <span id="timer">02:00:00</span>
 </div>
+
 </section>
 
 <section class="section">
@@ -53,17 +179,20 @@ Court approved rehabilitation placement assistance.
 </div>
 
 <div class="card">
-<b>Casefile Processing</b>
+<b>Casefile Processing Policy</b>
 <br><br>
 Client casefiles require an actively funded debit card on file.
 </div>
 
 </div>
+
 </section>
 
 <section class="section">
 
 <h3>Bail Bond Calculator</h3>
+
+<div class="calculator">
 
 <input id="bail" placeholder="Enter bail amount">
 
@@ -71,13 +200,61 @@ Client casefiles require an actively funded debit card on file.
 
 <p id="result"></p>
 
+</div>
+
+</section>
+
+<section class="assist">
+
+For assistance or questions please contact our office and ask to speak with a  
+<b>Licensed Agent</b>
+
 </section>
 
 <footer>
-Quick Release Bail Bonds®™ | Belton Texas
+
+Quick Release Bail Bonds®™  
+Belton Texas
+
 </footer>
 
-<script src="js/script.js"></script>
+<script>
+
+function calc(){
+
+let bail=document.getElementById("bail").value;
+
+if(bail===""){
+document.getElementById("result").innerHTML="Please enter a bail amount.";
+return;
+}
+
+let fee=bail*.10;
+
+document.getElementById("result").innerHTML=
+"Estimated Bond Fee: $"+fee.toFixed(2);
+
+}
+
+let timer=7200;
+
+setInterval(function(){
+
+timer--;
+
+let h=Math.floor(timer/3600);
+let m=Math.floor((timer%3600)/60);
+let s=timer%60;
+
+if(m<10){m="0"+m;}
+if(s<10){s="0"+s;}
+
+document.getElementById("timer").innerHTML =
+h+":"+m+":"+s;
+
+},1000);
+
+</script>
 
 </body>
 </html>
