@@ -2,15 +2,18 @@
 <html>
 <head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Requests</title>
 
 <style>
 
-body{background:#111;color:white;font-family:Poppins;margin:0;}
+body{margin:0;background:#111;color:white;font-family:Poppins;}
 
-header{background:#7FFF00;padding:20px;}
+header{background:#7FFF00;padding:15px 40px;display:flex;justify-content:space-between;}
 
-header h1{color:black;}
+header h1{color:black;margin:0;}
+
+nav a{color:black;margin-left:18px;text-decoration:none;font-weight:600;}
 
 .section{max-width:800px;margin:auto;padding:60px;}
 
@@ -22,19 +25,34 @@ margin-bottom:15px;
 
 button{
 background:#7FFF00;
-padding:12px 20px;
 border:none;
+padding:12px 20px;
+cursor:pointer;
 }
 
 footer{background:#7FFF00;color:black;text-align:center;padding:30px;}
 
 </style>
+
 </head>
 
 <body>
 
 <header>
+
 <h1>Quick Release Bail Bonds®™</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="bondprocess.html">Bond Process</a>
+<a href="staff.html">Staff</a>
+<a href="requests.html">Requests</a>
+<a href="contact.html">Contact</a>
+<a href="legal.html">Legal</a>
+</nav>
+
 </header>
 
 <section class="section">
@@ -43,13 +61,13 @@ footer{background:#7FFF00;color:black;text-align:center;padding:30px;}
 
 <form action="mailto:info@quickreleasebailbonds.com" method="post">
 
-<input type="text" placeholder="Full Name">
+<input type="text" placeholder="Full Name" required>
 
-<input type="email" placeholder="Email">
+<input type="email" placeholder="Email Address" required>
 
 <textarea placeholder="Describe the situation"></textarea>
 
-<button type="submit">Submit</button>
+<button type="submit">Submit Request</button>
 
 </form>
 
@@ -57,7 +75,7 @@ footer{background:#7FFF00;color:black;text-align:center;padding:30px;}
 
 <footer>
 
-Belton TX Office
+Quick Release Bail Bonds®™
 
 </footer>
 
