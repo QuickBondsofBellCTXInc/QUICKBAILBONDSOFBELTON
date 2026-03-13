@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 <title>Quick Release Bail Bonds®™ | Belton TX</title>
 
@@ -24,8 +24,6 @@ align-items:center;
 .logo{display:flex;align-items:center;gap:10px;}
 .logo img{height:40px;}
 
-header h1{margin:0;font-size:22px;color:white;}
-
 nav a{
 color:white;
 text-decoration:none;
@@ -42,22 +40,19 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url("images/paymentmethods.jpg");
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url("images/paymentmethods.jpg");
 background-size:cover;
-background-position:center;
 color:white;
 }
 
 .hero h2{
-font-size:46px;
+font-size:48px;
 text-shadow:-2px -2px 0 #8B0000,2px -2px 0 #8B0000,-2px 2px 0 #8B0000,2px 2px 0 #8B0000;
 }
 
-.slogan{color:#7FFF00;font-size:20px;margin-top:10px;}
+.slogan{color:#7FFF00;font-size:22px;margin-top:10px;}
 
 .section{max-width:1100px;margin:auto;padding:70px 20px;}
-
-.section h3{color:#7FFF00;}
 
 .cards{display:flex;flex-wrap:wrap;gap:20px;}
 
@@ -82,13 +77,6 @@ background:#7FFF00;
 border:none;
 font-weight:600;
 cursor:pointer;
-}
-
-.assist{
-background:#111;
-color:white;
-text-align:center;
-padding:40px;
 }
 
 .emailbtn{
@@ -153,12 +141,12 @@ padding:35px;
 <div class="card">
 <b>Pre-Trial Release Specialists</b><br><br>
 Expedited detention release coordination throughout Bell County.<br><br>
-Service Charge Rate: <b>10-20%</b>
+<b>Service Charge Rate: 10-20%</b>
 </div>
 
 <div class="card">
 <b>Mental Health / Rehab Placement</b><br><br>
-Court-approved rehabilitation placement assistance.
+Court approved rehabilitation placement assistance.
 </div>
 
 <div class="card">
@@ -178,7 +166,7 @@ Client casefiles require an actively funded debit card on file.
 
 <input id="bail" type="number" step="0.01" placeholder="Enter bail amount">
 
-<p style="font-size:14px;">Enter numbers or decimals only.</p>
+<p style="font-size:14px;">Enter numbers and decimals only.</p>
 
 <button onclick="calc()">Calculate Bond Cost</button>
 
@@ -188,14 +176,10 @@ Client casefiles require an actively funded debit card on file.
 
 </section>
 
-<section class="assist">
-
-For bond assistance contact our office.
-
-<br><br>
+<section class="section">
 
 <a class="emailbtn" href="mailto:quickreleasebond@protonmail.com?subject=Bond Assistance Request">
-Request Bond Assistance
+Bond Assistance Request
 </a>
 
 </section>
@@ -211,19 +195,10 @@ Belton, TX 76513
 <script>
 
 function calc(){
-
 let bail=document.getElementById("bail").value;
-
-if(!bail){
-document.getElementById("result").innerHTML="Enter bail amount.";
-return;
-}
-
+if(!bail){document.getElementById("result").innerHTML="Enter bail amount.";return;}
 let fee=bail*0.10;
-
-document.getElementById("result").innerHTML=
-"Estimated Bond Fee: $"+fee.toFixed(2)+" (10-20% depending on case risk)";
-
+document.getElementById("result").innerHTML="Estimated Bond Fee: $"+fee.toFixed(2)+" (10-20% depending on case risk)";
 }
 
 </script>
