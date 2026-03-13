@@ -3,241 +3,162 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quick Release Bail Bonds®™ | Belton TX</title>
+
+<title>Quick Release Bail Bonds</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
-/* Base Styles */
-body {
-    margin:0;
-    font-family:Poppins, sans-serif;
-    background:#111; /* black secondary */
-    color:#fff;
+
+body{
+margin:0;
+font-family:Poppins;
+background:#111;
+color:white;
 }
 
-/* Header */
-header {
-    background:#7FFF00; /* slime green main */
-    padding:18px 40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-header h1 {
-    margin:0;
-    font-size:24px;
-    color:black;
-}
-nav a {
-    color:black;
-    text-decoration:none;
-    margin-left:20px;
-    font-weight:600;
-}
-nav a:hover {
-    color:#FFD700; /* yellow detail on hover */
+header{
+background:#7FFF00;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 40px;
 }
 
-/* Hero Section */
-.hero {
-    height:520px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('images/paymentmethods.jpg');
-    background-size:cover;
-    background-position:center;
-    color:#fff;
-}
-.hero h2 {
-    font-size:44px;
-    margin-bottom:12px;
-}
-.hero p {
-    font-size:20px;
-    color:#FFD700; /* yellow detail */
-}
-.countdown {
-    font-size:22px;
-    margin-top:12px;
-    color:#7FFF00; /* slime green */
-    font-weight:600;
+header h1{
+color:black;
+margin:0;
 }
 
-/* Sections */
-.section {
-    max-width:1100px;
-    margin:auto;
-    padding:70px 20px;
-}
-.section h3 {
-    color:#7FFF00;
-    margin-bottom:20px;
+nav a{
+color:black;
+text-decoration:none;
+margin-left:20px;
+font-weight:600;
 }
 
-/* Cards */
-.cards {
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-}
-.card {
-    background:#222;
-    padding:25px;
-    flex:1;
-    min-width:260px;
-    border-radius:8px;
-    box-shadow:0 8px 16px rgba(0,0,0,0.5);
-    color:white;
-}
-.card b {
-    font-size:18px;
-    display:block;
-    margin-bottom:10px;
+nav a:hover{
+color:#FFD700;
 }
 
-/* Calculator */
-.calculator input {
-    padding:12px;
-    width:100%;
-    margin-bottom:10px;
-    border-radius:5px;
-    border:none;
-}
-.calculator button {
-    padding:14px;
-    width:100%;
-    background:#7FFF00;
-    border:none;
-    font-weight:600;
-    cursor:pointer;
-    border-radius:5px;
-}
-.calculator button:hover {
-    background:#32CD32; /* darker green hover */
-}
-#result {
-    margin-top:10px;
-    font-weight:600;
-    color:#FFD700;
+.hero{
+text-align:center;
+padding:80px 20px;
 }
 
-/* Assistance */
-.assist {
-    background:#000;
-    color:white;
-    text-align:center;
-    padding:40px;
+.hero img{
+width:120px;
+margin-bottom:20px;
 }
 
-/* Footer */
-footer {
-    background:#7FFF00;
-    color:black;
-    text-align:center;
-    padding:35px;
+.hero h2{
+color:#7FFF00;
 }
 
-/* Slogan & Logo */
-.logo {
-    max-height:60px;
-    margin-bottom:15px;
+.section{
+max-width:1000px;
+margin:auto;
+padding:60px 20px;
 }
-.slogan {
-    font-size:20px;
-    color:#FFD700;
-    font-weight:600;
-    margin-bottom:10px;
+
+.payments img{
+width:120px;
+margin-right:20px;
 }
+
+footer{
+background:#7FFF00;
+color:black;
+text-align:center;
+padding:35px;
+margin-top:50px;
+}
+
+button{
+background:#7FFF00;
+border:none;
+padding:12px 20px;
+font-weight:600;
+cursor:pointer;
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Quick Release Bail Bonds®™</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="bondprocess.html">Bond Process</a>
-        <a href="staff.html">Staff</a>
-        <a href="requests.html">Requests</a>
-        <a href="contact.html">Contact</a>
-        <a href="legal.html">Legal</a>
-    </nav>
+
+<h1>Quick Release Bail Bonds®™</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="bondprocess.html">Bond Process</a>
+<a href="staff.html">Staff</a>
+<a href="requests.html">Requests</a>
+<a href="contact.html">Contact</a>
+<a href="legal.html">Legal</a>
+</nav>
+
 </header>
 
 <section class="hero">
-    <img src="images/quickrelease-logo.png" alt="Quick Release Logo" class="logo">
-    <div class="slogan">"If the release is Quick, the charge won't stick!"</div>
-    <h2>Immediate Jail Release Assistance</h2>
-    <div class="countdown">
-        Average Release Processing: <span id="timer">02:00:00</span>
-    </div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/512px-Placeholder_view_vector.svg.png">
+
+<h2>"If the release is Quick, the charge won't stick!"</h2>
+
+<p>Professional Bail Bond Services</p>
+
 </section>
 
 <section class="section">
-    <h3>Professional Bail Services</h3>
-    <div class="cards">
-        <div class="card">
-            <b>Pre-Trial Release Specialists</b>
-            Expedited detention release coordination throughout Bell County.
-        </div>
-        <div class="card">
-            <b>Mental Health / Rehab Placement</b>
-            Court approved rehabilitation placement assistance.
-        </div>
-        <div class="card">
-            <b>Casefile Processing Policy</b>
-            Client casefiles require an actively funded debit card on file.
-        </div>
-    </div>
+
+<h2>Bond Fee Calculator</h2>
+
+<input id="bondAmount" type="number" placeholder="Enter bond amount">
+
+<button onclick="calculate()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+
+function calculate(){
+
+let bond=document.getElementById("bondAmount").value
+
+let fee=bond*.10
+
+document.getElementById("result").innerHTML="Estimated minimum service fee: $"+fee
+
+}
+
+</script>
+
 </section>
 
-<section class="section">
-    <h3>Bail Bond Calculator</h3>
-    <div class="calculator">
-        <input id="bail" placeholder="Enter bail amount (numbers only)">
-        <button onclick="calc()">Calculate Bond Cost</button>
-        <p id="result"></p>
-    </div>
-</section>
+<section class="section payments">
 
-<section class="assist">
-    For assistance or questions, please <a href="mailto:info@quickreleasebailbonds.com" style="color:#7FFF00;font-weight:600;">contact our office</a> and ask to speak with a  
-    <b>Licensed Agent</b>
+<h2>Accepted Payment Methods</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/PayPal_2014_logo.png">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg">
+
 </section>
 
 <footer>
-108 E. Central Ave, Belton TX 76513
+
+Quick Release Bail Bonds®™  
+108 E Central Ave  
+Belton TX 76513
+
 </footer>
-
-<script>
-// Bond calculator
-function calc(){
-    let bail = parseFloat(document.getElementById("bail").value);
-    if(isNaN(bail)){
-        document.getElementById("result").innerHTML="Please enter a valid number.";
-        return;
-    }
-    let feeMin = (bail * 0.10).toFixed(2);
-    let feeMax = (bail * 0.20).toFixed(2);
-    document.getElementById("result").innerHTML =
-        "Estimated Bond Fee: $"+feeMin+" - $"+feeMax+" (10-20% service rate)";
-}
-
-// Countdown timer
-let timer=7200;
-setInterval(function(){
-    timer--;
-    let h=Math.floor(timer/3600);
-    let m=Math.floor((timer%3600)/60);
-    let s=timer%60;
-    document.getElementById("timer").innerHTML =
-        (h<10?'0':'')+h+":"+(m<10?'0':'')+m+":"+(s<10?'0':'')+s;
-},1000);
-</script>
 
 </body>
 </html>
