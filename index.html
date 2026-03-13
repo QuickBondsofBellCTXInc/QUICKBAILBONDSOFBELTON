@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Quick Release Bail Bonds®™ | Belton TX</title>
 
@@ -22,7 +22,6 @@ align-items:center;
 }
 
 .logo{display:flex;align-items:center;gap:10px;}
-
 .logo img{height:40px;}
 
 header h1{margin:0;font-size:22px;color:white;}
@@ -43,23 +42,18 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url("images/paymentmethods.jpg");
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url("images/paymentmethods.jpg");
 background-size:cover;
+background-position:center;
 color:white;
 }
 
 .hero h2{
 font-size:46px;
-text-shadow:
--2px -2px 0 #8B0000,
-2px -2px 0 #8B0000,
--2px 2px 0 #8B0000,
-2px 2px 0 #8B0000;
+text-shadow:-2px -2px 0 #8B0000,2px -2px 0 #8B0000,-2px 2px 0 #8B0000,2px 2px 0 #8B0000;
 }
 
 .slogan{color:#7FFF00;font-size:20px;margin-top:10px;}
-
-.countdown{font-size:22px;margin-top:10px;color:#7FFF00;}
 
 .section{max-width:1100px;margin:auto;padding:70px 20px;}
 
@@ -99,12 +93,12 @@ padding:40px;
 
 .emailbtn{
 background:#7FFF00;
-padding:15px 25px;
-text-decoration:none;
-color:black;
-font-weight:600;
+padding:14px 25px;
 display:inline-block;
 margin-top:15px;
+text-decoration:none;
+font-weight:600;
+color:black;
 border-radius:6px;
 }
 
@@ -148,11 +142,6 @@ padding:35px;
 "If the release is Quick, the charge won't stick!"
 </div>
 
-<div class="countdown">
-Average Release Processing:
-<span id="timer">02:00:00</span>
-</div>
-
 </section>
 
 <section class="section">
@@ -164,7 +153,7 @@ Average Release Processing:
 <div class="card">
 <b>Pre-Trial Release Specialists</b><br><br>
 Expedited detention release coordination throughout Bell County.<br><br>
-Service Charge Rate: <b>10–20%</b>
+Service Charge Rate: <b>10-20%</b>
 </div>
 
 <div class="card">
@@ -201,7 +190,7 @@ Client casefiles require an actively funded debit card on file.
 
 <section class="assist">
 
-For bond assistance please contact our office.
+For bond assistance contact our office.
 
 <br><br>
 
@@ -222,23 +211,20 @@ Belton, TX 76513
 <script>
 
 function calc(){
+
 let bail=document.getElementById("bail").value;
-if(!bail){document.getElementById("result").innerHTML="Enter bail amount.";return;}
-let fee=bail*.10;
-document.getElementById("result").innerHTML="Estimated Bond Fee: $"+fee.toFixed(2)+" (10-20% depending on case risk)";
+
+if(!bail){
+document.getElementById("result").innerHTML="Enter bail amount.";
+return;
 }
 
-let timer=7200;
+let fee=bail*0.10;
 
-setInterval(function(){
-timer--;
-let h=Math.floor(timer/3600);
-let m=Math.floor((timer%3600)/60);
-let s=timer%60;
-if(m<10){m="0"+m;}
-if(s<10){s="0"+s;}
-document.getElementById("timer").innerHTML=h+":"+m+":"+s;
-},1000);
+document.getElementById("result").innerHTML=
+"Estimated Bond Fee: $"+fee.toFixed(2)+" (10-20% depending on case risk)";
+
+}
 
 </script>
 
