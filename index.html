@@ -11,12 +11,7 @@
 
 <style>
 
-body{
-margin:0;
-font-family:Poppins;
-background:#fafafa;
-color:#222;
-}
+body{margin:0;font-family:Poppins;background:#fafafa;color:#222;}
 
 header{
 background:#7FFF00;
@@ -26,11 +21,11 @@ justify-content:space-between;
 align-items:center;
 }
 
-header h1{
-margin:0;
-font-size:22px;
-color:white;
-}
+.logo{display:flex;align-items:center;gap:10px;}
+
+.logo img{height:40px;}
+
+header h1{margin:0;font-size:22px;color:white;}
 
 nav a{
 color:white;
@@ -39,9 +34,7 @@ margin-left:20px;
 font-weight:600;
 }
 
-nav a:hover{
-color:#FF0000;
-}
+nav a:hover{color:#FF0000;}
 
 .hero{
 height:500px;
@@ -50,38 +43,29 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url("images/paymentmethods.jpg");
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url("images/paymentmethods.jpg");
 background-size:cover;
-background-position:center;
 color:white;
 }
 
 .hero h2{
-font-size:42px;
-margin-bottom:10px;
+font-size:46px;
+text-shadow:
+-2px -2px 0 #8B0000,
+2px -2px 0 #8B0000,
+-2px 2px 0 #8B0000,
+2px 2px 0 #8B0000;
 }
 
-.countdown{
-font-size:22px;
-margin-top:10px;
-color:#7FFF00;
-}
+.slogan{color:#7FFF00;font-size:20px;margin-top:10px;}
 
-.section{
-max-width:1100px;
-margin:auto;
-padding:70px 20px;
-}
+.countdown{font-size:22px;margin-top:10px;color:#7FFF00;}
 
-.section h3{
-color:#7FFF00;
-}
+.section{max-width:1100px;margin:auto;padding:70px 20px;}
 
-.cards{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-}
+.section h3{color:#7FFF00;}
+
+.cards{display:flex;flex-wrap:wrap;gap:20px;}
 
 .card{
 background:white;
@@ -92,15 +76,10 @@ border-radius:8px;
 box-shadow:0 10px 20px rgba(0,0,0,.08);
 }
 
-.calculator{
-max-width:500px;
-}
-
 .calculator input{
 padding:12px;
 width:100%;
 margin-bottom:10px;
-border:1px solid #ddd;
 }
 
 .calculator button{
@@ -109,7 +88,6 @@ background:#7FFF00;
 border:none;
 font-weight:600;
 cursor:pointer;
-width:100%;
 }
 
 .assist{
@@ -117,6 +95,17 @@ background:#111;
 color:white;
 text-align:center;
 padding:40px;
+}
+
+.emailbtn{
+background:#7FFF00;
+padding:15px 25px;
+text-decoration:none;
+color:black;
+font-weight:600;
+display:inline-block;
+margin-top:15px;
+border-radius:6px;
 }
 
 footer{
@@ -127,14 +116,16 @@ padding:35px;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
 
+<div class="logo">
+<img src="images/quickrelease-logo.png">
 <h1>Quick Release Bail Bonds®™</h1>
+</div>
 
 <nav>
 <a href="index.html">Home</a>
@@ -153,6 +144,10 @@ padding:35px;
 
 <h2>Immediate Jail Release Assistance</h2>
 
+<div class="slogan">
+"If the release is Quick, the charge won't stick!"
+</div>
+
 <div class="countdown">
 Average Release Processing:
 <span id="timer">02:00:00</span>
@@ -167,20 +162,18 @@ Average Release Processing:
 <div class="cards">
 
 <div class="card">
-<b>Pre-Trial Release Specialists</b>
-<br><br>
-Expedited detention release coordination throughout Bell County.
+<b>Pre-Trial Release Specialists</b><br><br>
+Expedited detention release coordination throughout Bell County.<br><br>
+Service Charge Rate: <b>10–20%</b>
 </div>
 
 <div class="card">
-<b>Mental Health / Rehab Placement</b>
-<br><br>
-Court approved rehabilitation placement assistance.
+<b>Mental Health / Rehab Placement</b><br><br>
+Court-approved rehabilitation placement assistance.
 </div>
 
 <div class="card">
-<b>Casefile Processing Policy</b>
-<br><br>
+<b>Casefile Processing Policy</b><br><br>
 Client casefiles require an actively funded debit card on file.
 </div>
 
@@ -194,7 +187,9 @@ Client casefiles require an actively funded debit card on file.
 
 <div class="calculator">
 
-<input id="bail" placeholder="Enter bail amount">
+<input id="bail" type="number" step="0.01" placeholder="Enter bail amount">
+
+<p style="font-size:14px;">Enter numbers or decimals only.</p>
 
 <button onclick="calc()">Calculate Bond Cost</button>
 
@@ -206,52 +201,43 @@ Client casefiles require an actively funded debit card on file.
 
 <section class="assist">
 
-For assistance or questions please contact our office and ask to speak with a  
-<b>Licensed Agent</b>
+For bond assistance please contact our office.
+
+<br><br>
+
+<a class="emailbtn" href="mailto:quickreleasebond@protonmail.com?subject=Bond Assistance Request">
+Request Bond Assistance
+</a>
 
 </section>
 
 <footer>
 
-Quick Release Bail Bonds®™  
-Belton Texas
+Quick Release Bail Bonds®™<br>
+108 E. Central Ave<br>
+Belton, TX 76513
 
 </footer>
 
 <script>
 
 function calc(){
-
 let bail=document.getElementById("bail").value;
-
-if(bail===""){
-document.getElementById("result").innerHTML="Please enter a bail amount.";
-return;
-}
-
+if(!bail){document.getElementById("result").innerHTML="Enter bail amount.";return;}
 let fee=bail*.10;
-
-document.getElementById("result").innerHTML=
-"Estimated Bond Fee: $"+fee.toFixed(2);
-
+document.getElementById("result").innerHTML="Estimated Bond Fee: $"+fee.toFixed(2)+" (10-20% depending on case risk)";
 }
 
 let timer=7200;
 
 setInterval(function(){
-
 timer--;
-
 let h=Math.floor(timer/3600);
 let m=Math.floor((timer%3600)/60);
 let s=timer%60;
-
 if(m<10){m="0"+m;}
 if(s<10){s="0"+s;}
-
-document.getElementById("timer").innerHTML =
-h+":"+m+":"+s;
-
+document.getElementById("timer").innerHTML=h+":"+m+":"+s;
 },1000);
 
 </script>
