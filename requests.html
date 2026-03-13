@@ -1,87 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Requests | Quick Release Bail Bonds</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<title>Requests</title>
 
 <style>
-body {
-    margin:0;
-    font-family:Poppins, sans-serif;
-    background:#111;
-    color:white;
+
+body{background:#111;color:white;font-family:Poppins;margin:0;}
+
+header{background:#7FFF00;padding:20px;}
+
+header h1{color:black;}
+
+.section{max-width:800px;margin:auto;padding:60px;}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
 }
 
-header {
-    background:#7FFF00;
-    padding:18px 40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+button{
+background:#7FFF00;
+padding:12px 20px;
+border:none;
 }
 
-header h1 {
-    color:black;
-    margin:0;
-}
-
-nav a {
-    color:black;
-    text-decoration:none;
-    margin-left:20px;
-    font-weight:600;
-}
-
-nav a:hover {
-    color:#FFD700;
-}
-
-.section {
-    max-width:1000px;
-    margin:auto;
-    padding:70px 20px;
-}
-
-.section h2 {
-    color:#7FFF00;
-    margin-bottom:20px;
-}
-
-form {
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-}
-
-input, textarea, select {
-    padding:12px;
-    border:none;
-    border-radius:5px;
-    width:100%;
-}
-
-button {
-    padding:14px;
-    background:#7FFF00;
-    border:none;
-    font-weight:600;
-    cursor:pointer;
-    border-radius:5px;
-}
-
-button:hover {
-    background:#32CD32;
-}
-
-footer {
-    background:#7FFF00;
-    color:black;
-    text-align:center;
-    padding:35px;
-}
+footer{background:#7FFF00;color:black;text-align:center;padding:30px;}
 
 </style>
 </head>
@@ -90,44 +35,30 @@ footer {
 
 <header>
 <h1>Quick Release Bail Bonds®™</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="bondprocess.html">Bond Process</a>
-<a href="staff.html">Staff</a>
-<a href="requests.html">Requests</a>
-<a href="contact.html">Contact</a>
-<a href="legal.html">Legal</a>
-</nav>
 </header>
 
 <section class="section">
 
-<h2>Submit a Service Request</h2>
+<h2>Service Request</h2>
 
-<p>Use this form to request bond assistance or pre-trial release information. Our licensed agents will respond promptly.</p>
+<form action="mailto:info@quickreleasebailbonds.com" method="post">
 
-<form action="mailto:info@quickreleasebailbonds.com" method="post" enctype="text/plain">
-<input type="text" name="name" placeholder="Full Name" required>
-<input type="email" name="email" placeholder="Email Address" required>
-<input type="tel" name="phone" placeholder="Phone Number" required>
-<select name="serviceType" required>
-<option value="">Select Service Type</option>
-<option value="pretrial">Pre-Trial Release</option>
-<option value="rehab">Rehabilitation Placement</option>
-<option value="casefile">Casefile Assistance</option>
-<option value="other">Other Inquiry</option>
-</select>
-<textarea name="message" rows="5" placeholder="Additional Details"></textarea>
-<button type="submit">Submit Request</button>
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Describe the situation"></textarea>
+
+<button type="submit">Submit</button>
+
 </form>
 
 </section>
 
 <footer>
-108 E Central Ave<br>
-Belton TX 76513
+
+Belton TX Office
+
 </footer>
 
 </body>
